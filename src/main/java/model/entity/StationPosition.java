@@ -1,6 +1,7 @@
 package model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,8 +20,8 @@ timestamp	1604660411
 @NoArgsConstructor
 @AllArgsConstructor
 public class StationPosition {
-    private Double latitude;
-    private Double longitude;
+    @JsonProperty("iss_position")
+    private Position issPosition;
     private String massage;
     private Timestamp timestamp;
 

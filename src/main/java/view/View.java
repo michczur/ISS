@@ -27,7 +27,7 @@ public class View {
 
     public void printActualLocation(StationPosition position){
         log("Aktualna pozycja ISS to:");
-        log(position.getLatitude()+ " szerokości geograficznej, ");
-        log("oraz "+ position.getLongitude()+" długości geograficznej. ");
+        log(position.getIssPosition().getLatitude()+ " szerokości geograficznej, ");
+        log("oraz "+ position.getIssPosition().getLongitude()+" długości geograficznej. ");
     }
 }
